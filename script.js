@@ -1,4 +1,4 @@
-console.log("🎮 Portfólio de Leandro carregado!");
+console.log("Portfólio de Leandro carregado");
 
 // Animação suave ao clicar no menu
 document.querySelectorAll('nav a').forEach(anchor => {
@@ -11,7 +11,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 });
 
-// Pequena animação nos cards
+
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
   card.addEventListener('mouseenter', () => {
@@ -20,4 +20,11 @@ cards.forEach(card => {
   card.addEventListener('mouseleave', () => {
     card.style.background = "#1a1a1a";
   });
+});
+
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("show");
 });
