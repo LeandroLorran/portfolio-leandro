@@ -1,0 +1,187 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+/* PIXEL ART BANNER */
+.pixel-banner {
+  width: 100%;
+  height: 80px;
+  background-image: url('img/banner5.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+  margin: 30px 0;
+}
+/* MENU */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #111;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1ecfff;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 120px 20px 60px;
+  background: linear-gradient(to right, #111, #1c1c1c);
+}
+
+header h1 {
+  font-size: 2.8em;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1000px;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #00bfff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+/* LISTA */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+/* PROJETOS / CARDS */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00bfff;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+/* BOTÃO LINK */
+.btn-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #00bfff;
+  color: #111;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-link:hover {
+  background: #1ecfff;
+  color: #000;
+}
+
+/* LINKS */
+a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.social-icons i {
+  font-size: 2.5em;   /* Tamanho no PC (~40px) */
+  color: #00bfff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+  color: #1ecfff;
+}
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  .social-icons i {
+    font-size: 2em;   /* Um pouco menor no celular (~32px) */
+  }
+}
