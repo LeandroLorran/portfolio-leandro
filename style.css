@@ -184,4 +184,22 @@ footer {
   .social-icons i {
     font-size: 2em;   /* Um pouco menor no celular (~32px) */
   }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    padding: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #00bfff;
+    text-align: center;
+  }
+
+  nav ul.show {
+    display: flex;  /* Mostra quando abrir */
+  }
 }
